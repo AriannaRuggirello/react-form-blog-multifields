@@ -227,23 +227,24 @@ export default function CreatePost(){
           )}
     
     
-          <div >
-              
-              <div className='grid grid-cols-3 gap-10 my-10'>
+          <div className='my-52'>
+              <h1 className='font-bold text-center'>I miei post</h1>
+              <div className='grid grid-cols-3 gap-10 my-10 '>
                 {postList.map((post) => (
-                <div className=" bg-zinc-50 shadow-lg rounded">
+                <div className=" bg-zinc-50 shadow-lg rounded ">
     
-                <div className="p-4 bg-zinc-50">
-                  {/* title */}
-                    <h2 key={post.id} className="text-xl font-semibold text-gray-800"> {post.formData.title}</h2>
+                <div className="p-4 bg-zinc-50 ">
+                  
                     {/* img */}
                     <img
                         src={post.formData.image}
                         alt="Post Image"
                         className="my-2 max-h-52 object-cover w-full"
                       />
+                      {/* title */}
+                    <h2 key={post.id} className="text-xl font-semibold text-gray-800"> {post.formData.title}</h2>
                       {/* category */}
-                      <p className="text-blue-500 mt-2">Category: {post.formData.category}</p>
+                      <p className="text-emerald-500 font-bold mt-2">Category: {post.formData.category}</p>
                       {/* desc */}
                       <p className="text-gray-600 mt-2">{post.formData.description}</p>
                       {/* tags */}
