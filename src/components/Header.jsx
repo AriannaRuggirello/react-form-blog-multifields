@@ -18,7 +18,7 @@ export default function Header(){
         },
       ];
     return(
-        <header className="py-4 text-center text-xl font-semibold text-black-80 bg-orange-300">
+        <header className="py-4 text-center text-xl font-semibold bg-gray-900 text-white">
         
         
 
